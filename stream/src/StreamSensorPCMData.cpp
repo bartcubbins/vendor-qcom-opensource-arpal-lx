@@ -380,11 +380,6 @@ void StreamSensorPCMData::GetUUID(class SoundTriggerUUID *uuid,
 static const struct st_uuid qc_sensor_pcm_data_uuid =
     { 0xc88a2c89, 0x7a55, 0x498c, 0x836f, { 0x5d, 0x7e, 0xc8, 0x58, 0x29, 0x90 } };
 
-struct st_uuid StreamSensorPCMData::GetVendorUuid()
-{
-    return qc_sensor_pcm_data_uuid;
-}
-
 int32_t StreamSensorPCMData::SetupStreamConfig(const struct st_uuid *vendor_uuid)
 {
     int32_t status = 0;

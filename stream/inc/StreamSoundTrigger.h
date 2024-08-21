@@ -32,6 +32,7 @@
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
+
 #ifndef STREAMSOUNDTRIGGER_H_
 #define STREAMSOUNDTRIGGER_H_
 
@@ -181,7 +182,6 @@ public:
        return capture_requested_ && reader_ && reader_->isEnabled() &&
               (GetCurrentStateId() == ST_STATE_BUFFERING);
     }
-    struct st_uuid GetVendorUuid();
     void *GetGSLEngine() {
         if (gsl_engine_)
             return (void *)gsl_engine_.get();

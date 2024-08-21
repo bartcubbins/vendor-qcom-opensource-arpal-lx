@@ -735,11 +735,6 @@ void StreamACD::GetUUID(class SoundTriggerUUID *uuid,
 static const struct st_uuid qc_acd_uuid =
     { 0x4e93281b, 0x296e, 0x4d73, 0x9833, { 0x27, 0x10, 0xc3, 0xc7, 0xc1, 0xdb } };
 
-struct st_uuid StreamACD::GetVendorUuid()
-{
-    return qc_acd_uuid;
-}
-
 int32_t StreamACD::SetupStreamConfig(const struct st_uuid *vendor_uuid)
 {
     int32_t status = 0;

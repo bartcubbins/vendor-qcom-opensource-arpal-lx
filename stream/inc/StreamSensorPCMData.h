@@ -62,7 +62,6 @@ public:
     int32_t DisconnectDevice(pal_device_id_t device_id) override;
     int32_t ConnectDevice(pal_device_id_t device_id) override;
     pal_device_id_t GetAvailCaptureDevice();
-    struct st_uuid GetVendorUuid();
 
 private:
     void GetUUID(class SoundTriggerUUID *uuid, const struct st_uuid *vendor_uuid);
