@@ -3544,13 +3544,3 @@ bool StreamSoundTrigger::isStarted() {
             GetCurrentStateId() == ST_STATE_BUFFERING ||
             GetCurrentStateId() == ST_STATE_DETECTED);
 }
-
-struct st_uuid StreamSoundTrigger::GetVendorUuid()
-{
-    struct st_uuid uuid;
-    if (sm_config_) {
-        return sm_config_->vendor_uuid;
-    }
-    memset(&uuid, 0, sizeof(uuid));
-    return uuid;
-}

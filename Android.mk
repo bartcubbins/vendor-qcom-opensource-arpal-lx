@@ -143,8 +143,7 @@ LOCAL_HEADER_LIBRARIES := \
     libcapiv2_headers \
     libagm_headers \
     libacdb_headers \
-    libarosal_headers \
-    libvui_dmgr_headers
+    libarosal_headers
 
 LOCAL_SHARED_LIBRARIES := \
     libar-gsl\

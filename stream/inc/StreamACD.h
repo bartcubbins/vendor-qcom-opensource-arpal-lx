@@ -145,8 +145,6 @@ class StreamACD : public Stream {
                  const struct st_uuid *vendor_uuid);
     void SetEngineDetectionData(struct acd_context_event *event);
     struct acd_recognition_cfg *GetRecognitionConfig();
-    struct st_uuid GetVendorUuid();
-
  private:
     class ACDEventConfigData {
      public:
