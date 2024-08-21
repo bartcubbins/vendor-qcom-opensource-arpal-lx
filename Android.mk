@@ -144,7 +144,8 @@ LOCAL_HEADER_LIBRARIES := \
     libcapiv2_headers \
     libagm_headers \
     libacdb_headers \
-    libarosal_headers
+    libarosal_headers \
+    kvh2xml_headers
 
 LOCAL_SHARED_LIBRARIES := \
     libar-gsl\
